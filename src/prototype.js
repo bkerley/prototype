@@ -34,7 +34,7 @@ if (Prototype.Browser.MobileSafari)
   Prototype.BrowserFeatures.SpecificElementExtensions = false;
   
 
-<%= include 'base.js', 'string.js' %>
+<%= include 'base.js', 'string.js', 'string_doc.js' %>
 
 <%= include 'enumerable.js', 'array.js', 'number.js', 'hash.js', 'range.js' %>
 
