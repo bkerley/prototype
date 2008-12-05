@@ -20,6 +20,11 @@ task :dist do
     File.open(File.join(PROTOTYPE_DIST_DIR, 'prototype.js'), 'w+') do |dist|
       dist << Protodoc::Preprocessor.new('prototype.js')
     end
+    
+    File.open(File.join(PROTOTYPE_DIST_DIR, 'eproto.js'), 'w+') do |dist|
+      dist << Protodoc::Preprocessor.new('eproto.js')
+    end
+    
   end
 end
 
@@ -41,6 +46,7 @@ Rake::PackageTask.new('prototype', PROTOTYPE_VERSION) do |package|
   package.package_files.include(
     '[A-Z]*',
     'dist/prototype.js',
+    'dist/eproto.js',
     'lib/**',
     'src/**',
     'test/**'
