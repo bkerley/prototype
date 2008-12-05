@@ -32,5 +32,3 @@ if (Prototype.Browser.MobileSafari)
 <%= include 'base.js', 'string.js' %>
 
 <%= include 'enumerable.js', 'array.js', 'number.js', 'hash.js', 'range.js' %>
-
-Element.addMethods();
